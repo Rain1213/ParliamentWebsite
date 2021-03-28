@@ -1,0 +1,282 @@
+:root {
+  --light: rgb(238, 183, 107);
+  --dark_light: rgb(188, 133, 57);
+  --orange: rgb(226, 112, 58);
+  --dark_orange: rgb(186, 72, 18);
+  --pink: rgb(156, 61, 84);
+  --dark_pink: rgb(126, 31, 54);
+  --dark: rgb(49, 11, 11);
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #1acc8d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #34e5a6;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  background-image: url("../../assets/lok_sabha_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+#hero:before {
+  content: "";
+  background-color: rgba(226, 112, 58, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero h1 span {
+  color: #fff;
+  border-bottom: 4px solid #1acc8d;
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+}
+
+#hero .btn-get-started:hover {
+  background: #17b57d;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    padding-top: 80px;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    max-width: 50%;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+.hero-waves {
+  display: block;
+  margin-top: 60px;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  position: relative;
+}
+
+.wave1 use {
+  -webkit-animation: move-forever1 10s linear infinite;
+  animation: move-forever1 10s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  -webkit-animation: move-forever2 8s linear infinite;
+  animation: move-forever2 8s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  -webkit-animation: move-forever3 6s linear infinite;
+  animation: move-forever3 6s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+.row_spread {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modi {
+  padding: 5rem 0 0 0;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--light));
+}
+
+.modi h2, p{
+  padding: 0 2rem;
+  color: var(--dark);
+  text-align: right;
+}
+
+.img_rowfit {
+  margin: 2rem 0rem 0 2rem;
+  min-width: 40%;
+  max-width: 70%;
+  height: auto;
+}
+
+.img-center-cover {
+  background-color: var(--dark_orange);
+  min-width: 100%;
+  padding: 5%;
+}
+
+.lok_sabha_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: var(--light);
+}
+
+.link_section {
+  flex-basis: 25%;
+  margin: 2%;
+  border-radius: 0% 0% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark_pink);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lok_sabha_links img {
+  float: right;
+  flex-basis: 40%;
+  padding-top: 1%;
+}
+
+.lok_sabha_links h2 {
+  margin-top: 4rem;
+  color: var(--light)
+}
+
+.lok_sabha_links ul {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 4rem;
+}
+
+.lok_sabha_links li {
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+  
+.GJ:hover, .AN:hover, .AP:hover, .AR:hover, .AS:hover, .BR:hover, .CH:hover, .CT:hover, .DD:hover, .DL:hover, .DN:hover, .GA:hover, .GJ:hover, .HP:hover, .HR:hover, .JH:hover, .JK:hover, .KA:hover, .KL:hover, .LD:hover, .MH:hover, .ML:hover, .MN:hover, .MP:hover, .MZ:hover, .NL:hover, .OR:hover, .PB:hover, .PY:hover, .RJ:hover, .SK:hover, .TG:hover, .TN:hover, .TR:hover, .UP:hover, .UT:hover, .WB:hover {
+  fill: red;
+}

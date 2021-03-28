@@ -1,0 +1,134 @@
+:root {
+    --light: rgb(238, 183, 107);
+    --dark_light: rgb(188, 133, 57);
+    --orange: rgb(226, 112, 58);
+    --dark_orange: rgb(186, 72, 18);
+    --pink: rgb(156, 61, 84);
+    --dark_pink: rgb(126, 31, 54);
+    --dark: rgb(49, 11, 11);
+}
+
+.row_spread {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gandhi {
+    padding: 5rem 0 0 0;
+    background-color: var(--light);
+}
+
+.gandhi h2, p{
+    padding: 0 2rem;
+    color: var(--dark);
+    text-align: right;
+}
+
+.img_rowfit {
+    margin: 2rem 2rem 0 2rem;
+    min-width: 30%;
+    max-width: 50%;
+    height: auto;
+}
+
+.team {
+    padding: 10rem 0rem;
+    background-color: var(--dark_orange);
+}
+
+.row {
+    justify-content: center;
+}
+  
+.team .member {
+    text-align: center;
+    height: 10rem;
+    margin: 50px 0px;
+    padding: 1rem 0rem;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+}
+
+.team .member:hover {
+    z-index: 1;
+    transform: scale(1.8);
+}
+
+.team .member .pic {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.team .member .member-info {
+    min-height: 20rem;
+    position: absolute;
+    bottom: -80px;
+    left: 0px;
+    right: 0px;
+    padding: 15px 25px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.member .first{
+    background-image: url('../../assets/lok_sabha.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member:hover .first{
+    background-image: url('../../assets/lok_sabha_blurred.jpg');
+}
+
+.member .second{
+    background-image: url('../../assets/rajya_sabha.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member:hover .second{
+    background-image: url('../../assets/rajya_sabha_blurred.jpg');
+}
+
+.member .third{
+    background-image: url('../../assets/president.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.member:hover .third{
+    background-image: url('../../assets/president_blurred.jpg');
+}
+
+.team .member h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.team .member h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: var(--pink);
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0);
+    transition: all ease-in-out 0.4s;
+}
+
+.member:hover span {
+    color: white;
+}

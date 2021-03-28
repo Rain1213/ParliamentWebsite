@@ -1,0 +1,32 @@
+:root {
+    --light: rgb(238, 183, 107);
+    --dark_light: rgb(188, 133, 57);
+    --orange: rgb(226, 112, 58);
+    --dark_orange: rgb(186, 72, 18);
+    --pink: rgb(156, 61, 84);
+    --dark_pink: rgb(126, 31, 54);
+    --dark: rgb(49, 11, 11);
+}
+
+.header-icon {
+    width: 10rem;
+}
+
+.nav-it {
+    font-size: 1.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--dark);
+    margin-bottom: -2rem;
+}
+
+footer p {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--light);
+}

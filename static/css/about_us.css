@@ -1,0 +1,331 @@
+:root {
+    --theme_color: rgba(0, 0, 100, 0.5);
+}
+
+body, html {
+    margin: 0;
+}
+
+/*************************************LEVEL 0**********************************************/
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: -1;
+}
+
+/*************************************LEVEL 1**********************************************/
+
+#social_links {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    align-items: stretch;
+    z-index: 1;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#footer {
+    background-color: var(--theme_color);
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/*************************************SOCIAL_LINKS CHILDREN**************************************/
+
+#facebook {
+    background-image: url("icons/fb_logo.png");
+}
+#youtube {
+    background-image: url("icons/yt_logo.png");
+}
+
+#instagram {
+    background-image: url("icons/ig_logo.png");
+}
+
+#twitter {
+    background-image: url("icons/twitter_logo.png");
+}
+
+#social_links .icons {
+    background-color: var(--theme_color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 1%;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    outline: none;
+}
+
+#social_links .icons:hover {
+    filter: invert(50%);
+}
+
+/*************************************HEADER CHILDREN**************************************/
+
+.logo {
+    width: 50%;
+    margin-left: 10%;
+    outline: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    margin-left: 15%;
+}
+
+.contacts .icons {
+    filter: invert(30%) sepia(98%) saturate(3033%) hue-rotate(196deg) brightness(100%) contrast(87%);
+    align-self: center;
+    padding-right: 2%;
+    max-width: 5%;
+}
+
+.contacts .contact_info {
+    align-self: center;
+    color: white;
+    padding-right: 5%;
+    line-height: 150%;
+}
+
+.donate {
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.donate #donate_key {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-decoration: none;
+    padding: 10%;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15%;
+    outline: none;
+}
+
+.donate #donate_key:hover {
+    position: relative;
+    top: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**************************************NAV CHILDREN****************************************/
+.nav_items {
+    background-color: var(--theme_color);
+    color: white;
+    text-decoration: none;
+    padding: 1.5% 0%;
+    margin: 0% 0.05%;
+    flex-grow: 1;
+    text-align: center;
+    outline: none;
+    font-size: 125%;
+}
+
+.nav_items:hover  {
+    filter: grayscale(50%);
+}
+
+/***********************************FOOTER CHILDREN****************************************/
+.policies {
+    text-align: justify;
+    line-height: 150%;
+    width: 80%;
+    padding: 1%;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+}
+
+#footer .icons {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 5%;
+    outline: none;
+}
+/*************************************LEVEL 1**********************************************/
+
+#social_links {
+    order: 1;
+}
+
+#header {
+    order: 2;
+}
+
+#nav {
+    order: 3;
+}
+
+#body {
+    order: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    order: 5;
+}
+
+/*************************************LEVEL 2**********************************************/
+
+#body_heading {
+    color: white;
+    background-color: var(--theme_color);
+    padding: 5%;
+    flex-basis: 100%;
+    font-size: 300%;
+    text-align: center;
+}
+
+#agenda {
+    color: white;
+    background-color: var(--theme_color);
+    padding: 5%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#founders {
+    color: white;
+    background-color: var(--theme_color);
+    display: flex;
+    flex-direction: column;
+}
+
+#activities {
+    color: white;
+    background-color: var(--theme_color);
+    display: flex;
+    flex-direction: column;
+}
+
+#volunteer_pitch {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--theme_color);
+}
+
+#future_plans {
+    color: white;
+    background-color: var(--theme_color);
+    padding: 5%;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/*************************************LEVEL 3**********************************************/
+
+#agenda_heading {
+    text-decoration: underline;
+}
+
+#agenda_text {
+    font-size: 130%;
+    line-height: 150%;
+}
+
+#founder_heading {
+    align-self: center;
+    text-decoration: underline;
+}
+
+#founders_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founder .photo {
+    padding: 10%;
+}
+
+.founder .info {
+    padding: 0% 10% 10% 10%;
+}
+
+#activity_heading {
+    align-self: center;
+    text-decoration: underline;
+}
+
+#activities_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.activity .photo {
+    padding: 1%;
+}
+
+.activity .info {
+    align-self: flex-start;
+    padding: 1%;
+}
+
+#volunteer_button {
+    flex-basis: 10%;
+    margin: 5%;
+}
+
+#volunteer_inv {
+    flex-basis: 80%;
+    margin: 5%;
+    text-align: justify;
+}
+
+#future_plans_heading {
+    text-decoration: underline;
+}
+
+#future_plans_text {
+    font-size: 130%;
+    line-height: 150%;
+}
